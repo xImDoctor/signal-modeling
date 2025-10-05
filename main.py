@@ -1,5 +1,5 @@
-from signals/complex_signals import *
-from signals/real_signals import *
+from signals.complex_signals import *
+from signals.real_signals import *
 
 
 if __name__ == "__main__":
@@ -47,5 +47,5 @@ if __name__ == "__main__":
         (2, 3, np.pi/4, 'A=2'),
         (3, 1, np.pi/2, 'A=3')
     ]
-    compare_signal_powers(signals_compare, signal_type='real')
-    compare_signal_powers(signals_compare, signal_type='complex')
+    compare_signal_powers_real(signals_compare)
+    compare_signal_powers_complex(signals_compare)
